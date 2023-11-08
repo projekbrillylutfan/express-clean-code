@@ -6,5 +6,41 @@
     "content": "full experience",
     "user_id": 102
   },
-  { "id": 3, "title": "new", "content": "new", "user_id": 103 }
+  { "id": 3, "title": "new", "content": "new", "user_id": 103 },
+  {
+    "id": 4,
+    "title": "mancing mania",
+    "content": "mancing mania mantap untuk semester 7",
+    "user_id": 104
+  },
+  {
+    "id": 5,
+    "title": "mancing mania",
+    "content": "mancing mania mantap untuk semester 7",
+    "user_id": 104
+  },
+  {
+    "id": 6,
+    "title": "mancing mania",
+    "content": "mancing mania mantap untuk semester 7",
+    "user_id": 104
+  },
+  {
+    "id": 7,
+    "title": "mancing mania",
+    "content": "mancing mania mantap untuk semester 7",
+    "user_id": 104
+  },
+  {
+    "id": 8,
+    "title": "mancing mania",
+    "content": "mancing mania mantap untuk semester 7",
+    "user_id": 104
+  },
+  {
+    "id": 9,
+    "title": "ini data duplikat",
+    "content": "mencoba update hiya hiya",
+    "user_id": 106
+  }
 ]
