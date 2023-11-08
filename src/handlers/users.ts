@@ -92,7 +92,33 @@ class UserHandler {
   }
 
   async deleteUserById(req: Request, res: Response) {
-    
+    const id: number = parseInt(req.params.id);
+
+    const filteredUsers = listUser.filter((user) => user.id !== id)
+
+    const user = listUser.find((user) => user.id === id)
+
+    if (!user) {
+        const response: DefaultResponse = {
+            status: "error",
+            message: "User tidak ditemukan",
+            data: null,
+        }
+
+        res.status(404).send(response);
+    } else {
+        fs.writeFileSync("./data/users.json",  JSON.stringify(filteredUsers));
+
+        const response: DefaultResponse = {
+            status: "DELETE",
+            message: "berhasil menghapus data user",
+            data: {
+                delete_user: listUser.find((user) => user.id === id)
+            },
+        }
+
+        res.status(200).send(response)
+    }
   }
 }
 
